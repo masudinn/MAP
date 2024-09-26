@@ -18,3 +18,6 @@
 
 const map = L.map('map').setView([-7.761254962402551, 110.42463921766357], 16);
 
+const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        }).addTo(map);
