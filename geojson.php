@@ -1,23 +1,23 @@
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-
-
-
-
-
-
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIS</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+</head>
+<body>
+    <div id="map" style="width:100%; height:800px"></div>
+    <script src="allyogyakarta.js"></script>
 
-
-
-
-const map = L.map('map').setView([-7.761254962402551, 110.42463921766357], 16);
+    <script>
+        const map = L.map('map').setView([-7.761254962402551, 110.42463921766357], 16);
 
 const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
@@ -31,7 +31,7 @@ L.geoJson(gk, {
             weight: 1
         }).bindPopup(
             "Ini peta Gunung Kidul <br>" +
-            "<img src='../img/kab gk.jpg' width='200px'>").addTo(map);
+            "<img src='img/kabgk.jpg' width='200px'>").addTo(map);
 
         L.geoJson(sleman, {
             fillColor: 'Salmon',
@@ -39,7 +39,7 @@ L.geoJson(gk, {
             fiilOpacity: 1,
             weight: 1
         }).bindPopup("Ini peta Sleman <br>" +
-            "<img src='../img/kab sleman.jpg' width='200px'> + ").addTo(map);
+            "<img src='img/kab sleman.jpg' width='200px'> + ").addTo(map);
 
         L.geoJson(bantul, {
             fillColor: 'Amber',
@@ -47,7 +47,7 @@ L.geoJson(gk, {
             fiilOpacity: 1,
             weight: 1
         }).bindPopup("Ini peta Bantul <br>" +
-            "<img src='../img/kab bantul.jpg' width='200px'>").addTo(map);
+            "<img src='img/kab bantul.jpg' width='200px'>").addTo(map);
 
         L.geoJson(kp, {
             fillColor: 'Orange',
@@ -55,7 +55,7 @@ L.geoJson(gk, {
             fiilOpacity: 1,
             weight: 1
         }).bindPopup("Ini peta Kulon Progo <br>" +
-            "<img src='../img/kab kulonprogo.jpg' width='200px'>").addTo(map);
+            "<img src='img/kab kulonprogo.jpg' width='200px'>").addTo(map);
 
         L.geoJson(kota, {
             fillColor: 'red',
@@ -63,4 +63,8 @@ L.geoJson(gk, {
             fiilOpacity: 1,
             weight: 1
         }).bindPopup("Ini peta Kota Yogyakarta <br>" +
-            "<img src='../img/kab kota.jpg' width='200px'>").addTo(map);
+            "<img src='img/kab kota.jpg' width='200px'>").addTo(map);
+    </script>
+
+</body>
+</html>
