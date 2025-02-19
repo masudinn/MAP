@@ -1,50 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
     <section class="header">
-      <nav>
-        <a href="index.html"><img src="img/itacademy.png" /></a>
-        <div class="nav-links" id="navLinks">
-          <i class="fa fa-times" onclick="hideMenu()"></i>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#roadmap">Roadmap</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li>
-              <a href="">Drone</a>
-            </li>
-          </ul>
+        <nav>
+            <a href=""><img src="img/itacademy.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#roadmap">Roadmap</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#drone">Drone</a></li> 
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>Penerapan IT di bidang Pertanian</h1>
+            <p>
+                Digitalisasi bidang pertanian tidak hanya meningkatkan efisiensi
+                operasional, tetapi juga membantu dalam konservasi dan perlindungan
+                sumber daya alam yang penting bagi keberlanjutan lingkungan hidup.
+            </p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
         </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
-      </nav>
-      <div class="text-box">
-        <h1>Penerapan IT di Bidang Kehutanan</h1>
-        <p>
-          Digitalisasi bidang kehutanan tidak hanya meningkatkan efisiensi
-          operasional, tetapi juga membantu dalam konservasi dan perlindungan
-          sumber daya alam yang penting bagi keberlanjutan lingkungan hidup.
-        </p>
-        <a href="#" class="hero-btn">Visit us to know more</a>
-      </div>
     </section>
-  </body>
+    <section class="course">
+         <h1>Layanan Kami</h1>
+         <h5>Kami menawarkan layanan pembuatan sistem
+            dengan integrasi sensor IoT, Teknologi Informasi,
+            dan Drone yang dapat diterapkan tidak hanya di
+            sektor pertanian namun dapat diterapkan di kehidupan
+            sehari-hari.
+         </h5>
+         <div class="row">
+            <div class="course-col">
+                <h3>IoT</h3>
+                <p>Penerapan Internet of Things (IoT) di bidang pertanian membawa banyak perubahan positif, dengan meningkatkan efisiensi, mengurangi biaya, dan meningkatkan hasil panen. Berikut beberapa contoh penerapannya:
+
+                    Sistem Irigasi Pintar
+                    
+                    Pemantauan Kondisi Tanaman
+                    
+                    Pemantauan Kesehatan Hewan Ternak
+            </div>
+            <div class="course-col">
+                <h3>IT</h3>
+                <p>Penerapan IT di bidang pertanian mencakup penggunaan teknologi untuk meningkatkan efisiensi dan produktivitas:
+                    Sistem Informasi Geografis (GIS) untuk memetakan lahan dan menganalisis data geografis.
+                    Sensor IoT untuk memantau kondisi tanaman, tanah, dan irigasi secara real-time.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Drone</h3>
+                <p>Penerapan drone di bidang pertanian meliputi:
+
+                    Pemantauan Tanaman: Drone dilengkapi dengan kamera dan sensor untuk memantau kesehatan tanaman.
+                    Penyemprotan Pestisida: Drone digunakan untuk menyemprotkan pestisida atau pupuk secara tepat guna.
+                    Pemetaan Lahan: Drone membantu membuat peta lahan yang akurat untuk analisis kondisi tanah</p>
+            </div>
+            
+         </div>
+    </section>
+    <section class="campus">
+        <h1>Aktivitas dan Agenda Kami</h1>
+        <p>Kami memiliki beragam proyek dalam bidang
+            Internet of Things (IoT), teknologi Informasi(IT)
+            dan penggunaan Drone, terutama yang dapat diterapkan
+            secara spesifik dalam kehidupan sehari-hari di bidang
+            pertanian, perkebunan dan kehutanan.
+        </p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="img/IoT.jpg" alt="">
+                <div class="layer">
+                    <h3>IoT</h3>
+                </div>
+            </div>
+            
+            <div class="campus-col">
+                <img src="img/DRONE.jpg" alt="">
+                <div class="layer">
+                    <h3>IoT</h3>
+                </div>
+            </div>
+            
+            <div class="campus-col">
+                <img src="img/IT.jpg" alt="">
+                <div class="layer">
+                    <h3>IoT</h3>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="fasilities"></section>
+    <section class="testimoni"></section>
+    <section class="cta"></section>
+</body>
 </html>
