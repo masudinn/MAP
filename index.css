@@ -173,3 +173,46 @@ h3 {
     flex-direction: column;
   }
 }
+
+
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+}
+
+.fasilities{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    padding-top: 100px;
+}
+.fasilities-col{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.fasilities-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.testimoni{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    padding-top: 100px;
+}
