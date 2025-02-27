@@ -216,3 +216,31 @@ h3 {
     width: 80%;
     padding-top: 100px;
 }
+
+.testimoni-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.testimoni-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.testimoni-col p{
+    padding: 0;
+    color: black;
+}
+.testimoni-col h3{
+    margin-top: 15px;
+    text-align: left;
+    color: black;
+
+}
